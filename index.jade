@@ -1,1 +1,75 @@
 //output:index.html
+doctype html
+html(lang="en")
+  head
+    title Cyber Security
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width , initial-scale=1")
+    link(rel="stylesheet" , href="css/bootstrap.min.css")
+    link(rel="stylesheet", href="style.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Press+Start+2P")
+nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      a(href="#"): .navbar-brand //:>Cyber_Security
+body(style="margin-top:80px")
+  .container
+    .row
+      .col-md-3(style="border-radius:0px")
+        a(href="" data-toggle="modal" data-target=".virus" ).thumbnail
+          img(src="img/virus.jpg").card
+      .col-md-3
+        a(href="" data-toggle="modal" data-target=".worm").thumbnail
+          img(src="img/worm.jpg").card
+      .col-md-3
+        a(href="" data-toggle="modal" data-target=".trojan").thumbnail
+          img(src="img/trojan.jpg").card
+      .col-md-3
+        a(href="" data-toggle="modal" data-target=".botnet").thumbnail
+          img(src="img/botnet.jpg").card
+    .row
+      .col-md-3
+        a(href="" data-toggle="modal" data-target=".zombie").thumbnail
+          img(src="img/zombie.jpg").card
+
+    .modal.fade.virus(tabindex="-1" role="dialog")
+      .modal-dialog.modal-lg
+        .modal-content
+          .row
+            .col-md-12
+              img(src="img/cybersecurity/virus.jpg").center
+
+    .modal.fade.worm(tabindex="-1" role="dialog")
+      .modal-dialog.modal-lg
+        .modal-content
+          .row
+            .col-md-12
+              img(src="img/cybersecurity/worm.jpg").center
+
+    .modal.fade.trojan(tabindex="-1" role="dialog")
+      .modal-dialog.modal-lg
+        .modal-content
+          .row
+            .col-md-12
+              img(src="img/cybersecurity/trojan.jpg").center
+
+    .modal.fade.botnet(tabindex="-1" role="dialog")
+      .modal-dialog.modal-lg
+        .modal-content
+          .row
+            .col-md-12
+              img(src="img/cybersecurity/botnet.jpg").center
+
+    .modal.fade.zombie(tabindex="-1" role="dialog")
+      .modal-dialog.modal-lg
+        .modal-content
+          .row
+            .col-md-12
+              img(src="img/cybersecurity/zombie.jpg").center
+
+
+
+
+
+  script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+  script(src="js/bootstrap.min.js")
